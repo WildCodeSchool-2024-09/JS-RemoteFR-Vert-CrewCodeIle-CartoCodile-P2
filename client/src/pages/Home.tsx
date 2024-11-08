@@ -1,13 +1,15 @@
+import PseudoForm from "../components/PseudoForm";
 import Rules from "../components/Rules";
 
-const Home = () => {
+export default function Home() {
   return (
     <main>
+      <section>
+        <PseudoForm />
+      </section>
       <section>
         <Rules />
       </section>
     </main>
   );
-};
-
-export default Home;
+}
