@@ -1,8 +1,12 @@
 export default function PseudoForm() {
   return (
     <article className="p-4 bg-secondary rounded-md flex flex-col items-center gap-6 w-80">
-      <h2 className="font-Koulen text-xl text-primary font-semibold">PRET A JOUER ?</h2>
-      <p className="font-NotoSans text-primary">Entre ton pseudo et c'est parti !</p>
+      <h2 className="font-Koulen text-xl text-primary font-semibold">
+        PRET A JOUER ?
+      </h2>
+      <p className="font-NotoSans text-primary">
+        Entre ton pseudo et c'est parti !
+      </p>
       <form className="flex flex-col items-center" action="">
         <label htmlFor="pseudo" className="font-Koulen text-l text-primary">
           Quel est ton pseudo ?
