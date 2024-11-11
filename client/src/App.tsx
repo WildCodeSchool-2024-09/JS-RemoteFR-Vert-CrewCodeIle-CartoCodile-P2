@@ -7,8 +7,8 @@ import Home from "./pages/Home";
 export default function App() {
   return (
     <>
-      <Home />
       <Header />
+      <Home />
       <Footer />
     </>
   );

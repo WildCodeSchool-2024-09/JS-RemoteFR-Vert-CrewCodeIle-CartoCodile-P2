@@ -1,10 +1,10 @@
 const Rules = () => {
   return (
-    <section className="bg-gray-300 p-4 rounded-lg my-4 flex flex-col gap-4">
+    <section className="bg-secondary p-4 rounded-lg my-4 flex flex-col gap-4 w-80">
       <h2 className="text-xl font-semibold mb-2 text-primary font-Koulen">
-        LES RÈGLES ?
+        LES REGLES ?
       </h2>
-      <ul className="list-none pl-0">
+      <ul className="list-disc pl-4">
         <li className="text-sm text-primary mb-2 font-NotoSans">
           Le but est de répondre aux questions pour arriver à la fin du voyage !
         </li>
