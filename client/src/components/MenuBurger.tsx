@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function MenuBurger() {
   const [openBurger, setOpenBurger] = useState("invisible");
 
-  const handleClick = (e) => {
+  const handleClick = () => {
     openBurger === "invisible"
       ? setOpenBurger("visible")
       : setOpenBurger("invisible");
