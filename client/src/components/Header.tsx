@@ -4,8 +4,8 @@ import MenuBurger from "./MenuBurger";
 export default function Header() {
   return (
     <section className="bg-primary flex justify-center">
-      <LogoTitre />
-      <MenuBurger />
+     <LogoTitre/>
+     <MenuBurger/>
     </section>
   );
 }
