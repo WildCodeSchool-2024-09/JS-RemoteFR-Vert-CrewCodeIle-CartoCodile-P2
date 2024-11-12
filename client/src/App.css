@@ -3,3 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Koulen";
+  src: url("../public/fonts/Koulen-Regular.ttf");
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("../public/fonts/NotoSans-Regular.ttf");
+}

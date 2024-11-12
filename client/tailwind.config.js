@@ -8,6 +8,10 @@ export default {
         secondary: "#EBEBEB",
         accent: "#4CAF50",
       },
+      fontFamily: {
+        Koulen: "Koulen",
+        NotoSans: "NotoSans",
+      },
     },
   },
   plugins: [],
