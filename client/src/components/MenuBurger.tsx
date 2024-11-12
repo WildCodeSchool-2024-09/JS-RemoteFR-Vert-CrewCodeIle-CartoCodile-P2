@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
+
 export default function MenuBurger() {
   return (
     <nav className="p-4">
       <ul>
         <li className="show">
-          <a href="home" className="text-secondary">
+          <Link to="/" className="text-secondary">
             Accueil
-          </a>
+          </Link>
         </li>
         <li className="show">
-          <a href="about" className="text-secondary">
+          <Link to="/About" className="text-secondary">
             A propos
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
