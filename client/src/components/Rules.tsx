@@ -1,6 +1,6 @@
 const Rules = () => {
   return (
-    <section className="bg-secondary p-4 rounded-lg my-4 flex flex-col gap-4 w-80">
+    <section className="bg-secondary hover:animate-spin p-4 rounded-lg my-4 flex flex-col gap-4 w-80">
       <h2 className="text-xl font-semibold mb-2 text-primary font-Koulen">
         LES REGLES ?
       </h2>

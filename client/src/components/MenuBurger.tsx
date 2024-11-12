@@ -4,12 +4,12 @@ export default function MenuBurger() {
   return (
     <nav className="p-4">
       <ul>
-        <li className="show">
+        <li className="show hover:animate-spin">
           <Link to="/" className="text-secondary">
             Accueil
           </Link>
         </li>
-        <li className="show">
+        <li className="show hover:animate-spin">
           <Link to="/About" className="text-secondary">
             A propos
           </Link>
