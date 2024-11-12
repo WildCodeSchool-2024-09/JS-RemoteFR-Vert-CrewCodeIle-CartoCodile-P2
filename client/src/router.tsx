@@ -5,22 +5,21 @@ import Game from "./pages/Game";
 import Home from "./pages/Home";
 
 export const router = createBrowserRouter([
-    {
-        element: <App />,
-        children: [
-            {
-                path: "/",
-                element: <Home />,
-            },
-            {
-                path: "/About",
-                element: <About />,
-            },
-            {
-                path: "/Game",
-                element: <Game />,
-            },
-        ],
-    },
+  {
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/About",
+        element: <About />,
+      },
+      {
+        path: "/Game",
+        element: <Game />,
+      },
+    ],
+  },
 ]);
-
