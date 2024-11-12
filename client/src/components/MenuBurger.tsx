@@ -1,20 +1,51 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function MenuBurger() {
+  const [openBurger, setOpenBurger] = useState("invisible");
+
+  const handleClick = () => {
+    openBurger === "invisible"
+      ? setOpenBurger("visible")
+      : setOpenBurger("invisible");
+  };
+
   return (
-    <nav className="p-4">
-      <ul>
-        <li className="show hover:animate-spin">
-          <Link to="/" className="text-secondary">
-            Accueil
-          </Link>
-        </li>
-        <li className="show hover:animate-spin">
-          <Link to="/About" className="text-secondary">
-            A propos
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <nav className="p-4">
+        <button className="menuBurger" type="button" onClick={handleClick}>
+          <span className="burgerLine" />
+          <span className="burgerLine" />
+          <span className="burgerLine" />
+        </button>
+
+        <ul className={openBurger}>
+          <li>
+            <Link to="/" className="text-secondary">
+              Accueil
+            </Link>
+          </li>
+          <li>
+            <Link to="/About" className="text-secondary">
+              A propos
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
+      <style>
+        {`.burgerLine {
+          display:block;
+          width:3em;
+          height:0.3em;
+          background-color:white;
+          margin-bottom:0.5em;
+          }
+
+          .menuBurger{
+           margin-top:0.5em;
+      }`}
+      </style>
+    </>
   );
 }

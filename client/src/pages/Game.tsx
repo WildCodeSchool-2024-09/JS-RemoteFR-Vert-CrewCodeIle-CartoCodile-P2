@@ -1,7 +1,7 @@
 export default function Game() {
   return (
     <>
-      <h2>Pouette le retour en minuscule</h2>
+      <h2>GAME PAGE</h2>
     </>
   );
 }
