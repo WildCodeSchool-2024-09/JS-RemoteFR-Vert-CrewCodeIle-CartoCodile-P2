@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function MenuBurger() {
   const [openBurger, setOpenBurger] = useState("invisible");
@@ -20,14 +21,14 @@ export default function MenuBurger() {
 
         <ul className={openBurger}>
           <li>
-            <a href="home" className="text-secondary">
+            <Link to="/" className="text-secondary">
               Accueil
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="about" className="text-secondary">
+            <Link to="/About" className="text-secondary">
               A propos
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
