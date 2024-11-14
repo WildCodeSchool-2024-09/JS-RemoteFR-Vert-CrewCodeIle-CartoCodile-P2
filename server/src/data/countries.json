@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "countryName": "France",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    "capital": "Paris",
+    "population": 67081000,
+    "currency": "Euro",
+    "weather": {
+      "description": "partiellement nuageux",
+      "temperature": 18
+    },
+    "localTime": "14:30",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 2,
+    "countryName": "Japan",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
+    "capital": "Tokyo",
+    "population": 125800000,
+    "currency": "Yen Japonais",
+    "weather": {
+      "description": "ensoleillé",
+      "temperature": 24
+    },
+    "localTime": "21:30",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Tokyo_Tower_and_Tokyo_Skyline.jpg",
+    "timezone": "Asia/Tokyo"
+  },
+  {
+    "id": 3,
+    "countryName": "United States",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+    "capital": "Washington, D.C.",
+    "population": 331893745,
+    "currency": "Dollar Américain",
+    "weather": {
+      "description": "pluvieux",
+      "temperature": 15
+    },
+    "localTime": "08:30",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/a1/White_House.jpg",
+    "timezone": "America/New_York"
+  },
+  {
+    "id": 4,
+    "countryName": "Brazil",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
+    "capital": "Brasília",
+    "population": 213993437,
+    "currency": "Real Brésilien",
+    "weather": {
+      "description": "ensoleillé",
+      "temperature": 28
+    },
+    "localTime": "10:30",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/3/32/Cristo_Redentor_Rio_de_Janeiro.jpg",
+    "timezone": "America/Sao_Paulo"
+  },
+  {
+    "id": 5,
+    "countryName": "Australia",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg",
+    "capital": "Canberra",
+    "population": 25687041,
+    "currency": "Dollar Australien",
+    "weather": {
+      "description": "venté",
+      "temperature": 12
+    },
+    "localTime": "23:30",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Sydney_Opera_House_-_Dec_2008.jpg",
+    "timezone": "Australia/Sydney"
+  },
+  {
+    "id": 6,
+    "countryName": "South Africa",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
+    "capital": "Pretoria",
+    "population": 59308690,
+    "currency": "Rand Sud-Américain",
+    "weather": {
+      "description": "nuageux",
+      "temperature": 20
+    },
+    "localTime": "14:30",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/2/23/Table_Mountain%2C_Cape_Town%2C_South_Africa.jpg",
+    "timezone": "Africa/Johannesburg"
+  },
+  {
+    "id": 7,
+    "countryName": "India",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+    "capital": "New Delhi",
+    "population": 1380004385,
+    "currency": "Roupie Indienne",
+    "weather": {
+      "description": "brumeux",
+      "temperature": 29
+    },
+    "localTime": "19:00",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Taj_Mahal_in_March_2004.jpg",
+    "timezone": "Asia/Kolkata"
+  },
+  {
+    "id": 8,
+    "countryName": "Germany",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
+    "capital": "Berlin",
+    "population": 83240525,
+    "currency": "Euro",
+    "weather": {
+      "description": "pluvieux",
+      "temperature": 16
+    },
+    "localTime": "13:30",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Brandenburg_Gate_at_night.jpg",
+    "timezone": "Europe/Berlin"
+  },
+  {
+    "id": 9,
+    "countryName": "Russia",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
+    "capital": "Moscow",
+    "population": 144104080,
+    "currency": "Rouble Russe",
+    "weather": {
+      "description": "neigeux",
+      "temperature": -5
+    },
+    "localTime": "15:30",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/d/d3/St_Basil%27s_Cathedral_on_the_Red_Square_in_Moscow.jpg",
+    "timezone": "Europe/Moscow"
+  },
+  {
+    "id": 10,
+    "countryName": "China",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_China.svg",
+    "capital": "Beijing",
+    "population": 1402112000,
+    "currency": "Yuan Chinois",
+    "weather": {
+      "description": "ensoleillé",
+      "temperature": 22
+    },
+    "localTime": "20:30",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Great_Wall_of_China_July_2006.jpg",
+    "timezone": "Asia/Shanghai"
+  }
+]
