@@ -4,8 +4,6 @@ import express from "express";
 
 const app = express();
 
-// Configure it
-
 /* ************************************************************************* */
 
 // CORS Handling: Why is the current code present and do I need to define specific allowed origins for my project?
@@ -66,7 +64,6 @@ import router from "./router";
 app.use(router);
 
 /* ************************************************************************* */
-
 // Production-ready setup: What is it for?
 
 // The code includes sections to set up a production environment where the client and server are executed from the same processus.

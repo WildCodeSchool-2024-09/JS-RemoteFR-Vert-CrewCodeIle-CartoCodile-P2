@@ -7,6 +7,11 @@ export type Country = {
   monumentImage: string;
 };
 
+export type BadCountries = {
+  id: number;
+  countryName: string;
+};
+
 export type Question = {
   id: number;
   country: Country;
