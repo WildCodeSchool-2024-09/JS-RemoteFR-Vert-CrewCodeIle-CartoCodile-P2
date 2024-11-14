@@ -1,6 +1,6 @@
 import Game from "../components/Game";
 
-export default function Home() {
+export default function Gamepage() {
   return (
     <main>
       <section>
