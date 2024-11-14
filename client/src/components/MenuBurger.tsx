@@ -14,23 +14,30 @@ export default function MenuBurger() {
     <>
       <nav className="p-4">
         <button className="menuBurger" type="button" onClick={handleClick}>
-          <span className="burgerLine" />
-          <span className="burgerLine" />
-          <span className="burgerLine" />
+          <span className="burgerLine lg:invisible" />
+          <span className="burgerLine lg:invisible" />
+          <span className="burgerLine lg:invisible" />
         </button>
-
-        <ul className={openBurger}>
-          <li>
-            <Link to="/" className="text-secondary">
-              Accueil
-            </Link>
-          </li>
-          <li>
-            <Link to="/About" className="text-secondary">
-              A propos
-            </Link>
-          </li>
-        </ul>
+        <div className={openBurger}>
+          <ul className="lg:flex lg:flex-row lg:gap-8">
+            <li>
+              <Link
+                to="/"
+                className="text-secondary text-lg font-Koulen lg:visible"
+              >
+                Accueil
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/About"
+                className="text-secondary text-lg font-Koulen lg:visible"
+              >
+                A propos
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <style>
