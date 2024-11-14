@@ -2,6 +2,24 @@
 import express from "express";
 const app = express();
 const countries = require("./data/countries.json");
+const PORT = 3310;
+
+app.get("/api/countries", (req, res) => {
+  res.json(countries);
+});
+
+// app.get("/api/countries/:id", (req, res) => {
+//   const countryId = +req.params.id;
+//   const country = countries.find((c: c) => c.id === countryId);
+
+//   if (country) {
+//     res.json(country);
+//   } else {
+//     res.status(404).json({ error: "Country not found" });
+//   }
+// });
+
+app.listen(PORT, () => {});
 
 // Configure it
 
@@ -63,21 +81,6 @@ import router from "./router";
 app.use(router);
 
 // import countries from './data/countries.json';
-
-app.get("/api/countries", (req, res) => {
-  res.json(countries);
-});
-
-app.get("/api/countries/:id", (req, res) => {
-  const countryId = +req.params.id;
-  const country = countries.find((c) => c.id === countryId);
-
-  if (country) {
-    res.json(country);
-  } else {
-    res.status(404).json({ error: "Country not found" });
-  }
-});
 
 // Production-ready setup: What is it for?
 

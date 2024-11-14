@@ -4,7 +4,7 @@
 export default function Game() {
   return (
     <>
-      {/* <CountryCard/> */}
+      {/* <CountryCard /> */}
       <h2>GAME PAGE</h2>
     </>
   );

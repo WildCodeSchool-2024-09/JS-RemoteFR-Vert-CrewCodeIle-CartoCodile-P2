@@ -31,4 +31,4 @@ export type Question = {
     image: string | null;
     label: string;
   };
-}; 
+};

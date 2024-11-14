@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import type { Question } from "../lib/definitions";
 import type { CountryCardType } from "../lib/definitions";
 
-export default function CountryCard({ question }: { question: Question }) {
+export default function CountryCard({ questionId }: { questionId: Question }) {
   const countriesData = import.meta.env.VITE_API_COUNTRIES;
   const [countriesDetails, setCountriesDetails] = useState<
     CountryCardType[] | null
@@ -25,8 +25,8 @@ export default function CountryCard({ question }: { question: Question }) {
 
         {countriesDetails?.map(
           (c) =>
-            c.id === question.id && (
-              <section key={question.id}>
+            c.id === questionId.id && (
+              <section key={questionId.id}>
                 <h2 className="self-center m-8 mb-8 text-secondary">
                   {c.countryName}
                 </h2>
