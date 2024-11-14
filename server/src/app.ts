@@ -64,22 +64,6 @@ import router from "./router";
 app.use(router);
 
 /* ************************************************************************* */
-import countries from "../data/countries.json";
-
-app.get("/api/countries", (req, res) => {
-  res.json(countries);
-});
-
-app.get("/api/countries/:id", (req, res) => {
-  const countryId = +req.params.id;
-  const country = countries.find((c) => c.id === countryId);
-
-  if (country) {
-    res.json(country);
-  } else {
-    res.status(404).json({ error: "Country not found" });
-  }
-});
 // Production-ready setup: What is it for?
 
 // The code includes sections to set up a production environment where the client and server are executed from the same processus.
