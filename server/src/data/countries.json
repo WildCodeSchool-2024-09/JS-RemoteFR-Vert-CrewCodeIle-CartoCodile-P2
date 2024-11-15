@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "countryName": "Japan",
+    "countryName": "Japon",
     "flag": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
     "capital": "Tokyo",
     "population": 125800000,
@@ -33,7 +33,7 @@
   },
   {
     "id": 3,
-    "countryName": "United States",
+    "countryName": "Etats-Unis",
     "flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
     "capital": "Washington, D.C.",
     "population": 331893745,
@@ -49,7 +49,7 @@
   },
   {
     "id": 4,
-    "countryName": "Brazil",
+    "countryName": "Brésil",
     "flag": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
     "capital": "Brasília",
     "population": 213993437,
@@ -65,13 +65,13 @@
   },
   {
     "id": 5,
-    "countryName": "Australia",
+    "countryName": "Australie",
     "flag": "https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg",
     "capital": "Canberra",
     "population": 25687041,
     "currency": "Dollar Australien",
     "weather": {
-      "description": "venté",
+      "description": "nuageux",
       "temperature": 12
     },
     "localTime": "23:30",
@@ -81,7 +81,7 @@
   },
   {
     "id": 6,
-    "countryName": "South Africa",
+    "countryName": "Afrique du Sud",
     "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
     "capital": "Pretoria",
     "population": 59308690,
@@ -91,13 +91,13 @@
       "temperature": 20
     },
     "localTime": "14:30",
-    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/2/23/Table_Mountain%2C_Cape_Town%2C_South_Africa.jpg",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/9/92/Mandela_statue_at_Drakenstein_Correctional_Facility_%2813263918723%29.jpg",
     "timezone": "Africa/Johannesburg",
     "hint": "C'est le pays de Nelson Mandela."
   },
   {
     "id": 7,
-    "countryName": "India",
+    "countryName": "Inde",
     "flag": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
     "capital": "New Delhi",
     "population": 1380004385,
@@ -113,7 +113,7 @@
   },
   {
     "id": 8,
-    "countryName": "Germany",
+    "countryName": "Allemagne",
     "flag": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
     "capital": "Berlin",
     "population": 83240525,
@@ -129,7 +129,7 @@
   },
   {
     "id": 9,
-    "countryName": "Russia",
+    "countryName": "Russie",
     "flag": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
     "capital": "Moscow",
     "population": 144104080,
@@ -145,7 +145,7 @@
   },
   {
     "id": 10,
-    "countryName": "China",
+    "countryName": "Chine",
     "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
     "capital": "Beijing",
     "population": 1402112000,
