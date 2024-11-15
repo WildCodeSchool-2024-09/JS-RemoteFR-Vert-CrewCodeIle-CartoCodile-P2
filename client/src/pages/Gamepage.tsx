@@ -1,3 +1,11 @@
+import Game from "../components/Game";
+
 export default function Gamepage() {
-  return <></>;
+  return (
+    <main>
+      <section>
+        <Game />
+      </section>
+    </main>
+  );
 }

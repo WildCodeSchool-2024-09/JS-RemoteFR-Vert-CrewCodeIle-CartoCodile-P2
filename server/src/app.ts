@@ -2,11 +2,7 @@
 import express from "express";
 const app = express();
 const countries = require("./data/countries.json");
-const PORT = 3310;
-
-app.get("/api/countries", (req, res) => {
-  res.json(countries);
-});
+const badcountries = require("./data/badcountries.json");
 
 // app.get("/api/countries/:id", (req, res) => {
 //   const countryId = +req.params.id;
@@ -18,8 +14,6 @@ app.get("/api/countries", (req, res) => {
 //     res.status(404).json({ error: "Country not found" });
 //   }
 // });
-
-app.listen(PORT, () => {});
 
 // Configure it
 
@@ -79,6 +73,14 @@ import router from "./router";
 
 // Mount the API router under the "/api" endpoint
 app.use(router);
+
+app.get("/api/countries", (req, res) => {
+  res.json(countries);
+});
+
+app.get("/api/badcountries", (req, res) => {
+  res.json(badcountries);
+});
 
 // import countries from './data/countries.json';
 

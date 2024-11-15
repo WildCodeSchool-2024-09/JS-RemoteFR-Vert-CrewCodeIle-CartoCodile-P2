@@ -12,11 +12,12 @@
     },
     "localTime": "14:30",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg",
-    "timezone": "Europe/Paris"
+    "timezone": "Europe/Paris",
+    "hint": "C'est le pays du camembert et des baguettes."
   },
   {
     "id": 2,
-    "countryName": "Japan",
+    "countryName": "Japon",
     "flag": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
     "capital": "Tokyo",
     "population": 125800000,
@@ -26,12 +27,13 @@
       "temperature": 24
     },
     "localTime": "21:30",
-    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Tokyo_Tower_and_Tokyo_Skyline.jpg",
-    "timezone": "Asia/Tokyo"
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Mt._Fuji_from_Park_Hotel_Tokyo_%284457243468%29.jpg",
+    "timezone": "Asia/Tokyo",
+    "hint": "C'est le pays des samouraïs."
   },
   {
     "id": 3,
-    "countryName": "United States",
+    "countryName": "Etats-Unis",
     "flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
     "capital": "Washington, D.C.",
     "population": 331893745,
@@ -41,12 +43,13 @@
       "temperature": 15
     },
     "localTime": "08:30",
-    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/a1/White_House.jpg",
-    "timezone": "America/New_York"
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/af/WhiteHouseSouthFacade.JPG",
+    "timezone": "America/New_York",
+    "hint": "C'est le pays qui a envoyé les premiers hommes sur la lune."
   },
   {
     "id": 4,
-    "countryName": "Brazil",
+    "countryName": "Brésil",
     "flag": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
     "capital": "Brasília",
     "population": 213993437,
@@ -56,27 +59,29 @@
       "temperature": 28
     },
     "localTime": "10:30",
-    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/3/32/Cristo_Redentor_Rio_de_Janeiro.jpg",
-    "timezone": "America/Sao_Paulo"
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg",
+    "timezone": "America/Sao_Paulo",
+    "hint": "C'est le pays de la samba et du carnaval."
   },
   {
     "id": 5,
-    "countryName": "Australia",
+    "countryName": "Australie",
     "flag": "https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg",
     "capital": "Canberra",
     "population": 25687041,
     "currency": "Dollar Australien",
     "weather": {
-      "description": "venté",
+      "description": "nuageux",
       "temperature": 12
     },
     "localTime": "23:30",
-    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Sydney_Opera_House_-_Dec_2008.jpg",
-    "timezone": "Australia/Sydney"
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Sydney_Opera_House_-_Dec_2008.jpg",
+    "timezone": "Australia/Sydney",
+    "hint": "C'est le pays des kangourous et des koalas."
   },
   {
     "id": 6,
-    "countryName": "South Africa",
+    "countryName": "Afrique du Sud",
     "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
     "capital": "Pretoria",
     "population": 59308690,
@@ -86,12 +91,13 @@
       "temperature": 20
     },
     "localTime": "14:30",
-    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/2/23/Table_Mountain%2C_Cape_Town%2C_South_Africa.jpg",
-    "timezone": "Africa/Johannesburg"
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/9/92/Mandela_statue_at_Drakenstein_Correctional_Facility_%2813263918723%29.jpg",
+    "timezone": "Africa/Johannesburg",
+    "hint": "C'est le pays de Nelson Mandela."
   },
   {
     "id": 7,
-    "countryName": "India",
+    "countryName": "Inde",
     "flag": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
     "capital": "New Delhi",
     "population": 1380004385,
@@ -101,12 +107,13 @@
       "temperature": 29
     },
     "localTime": "19:00",
-    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Taj_Mahal_in_March_2004.jpg",
-    "timezone": "Asia/Kolkata"
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/7/74/Taj_Mahal%2C_Agra%2C_India_edit2.jpg",
+    "timezone": "Asia/Kolkata",
+    "hint": "Christophe Colomb pensait aller là-bas."
   },
   {
     "id": 8,
-    "countryName": "Germany",
+    "countryName": "Allemagne",
     "flag": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
     "capital": "Berlin",
     "population": 83240525,
@@ -116,12 +123,13 @@
       "temperature": 16
     },
     "localTime": "13:30",
-    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Brandenburg_Gate_at_night.jpg",
-    "timezone": "Europe/Berlin"
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Brandenburger_Tor_nachts.jpg",
+    "timezone": "Europe/Berlin",
+    "hint": "Le compositeur Beethoven en est originaire."
   },
   {
     "id": 9,
-    "countryName": "Russia",
+    "countryName": "Russie",
     "flag": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
     "capital": "Moscow",
     "population": 144104080,
@@ -131,13 +139,14 @@
       "temperature": -5
     },
     "localTime": "15:30",
-    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/d/d3/St_Basil%27s_Cathedral_on_the_Red_Square_in_Moscow.jpg",
-    "timezone": "Europe/Moscow"
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Red_Square_2023.jpg",
+    "timezone": "Europe/Moscow",
+    "hint": "C'est le plus grand pays du monde."
   },
   {
     "id": 10,
-    "countryName": "China",
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_China.svg",
+    "countryName": "Chine",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
     "capital": "Beijing",
     "population": 1402112000,
     "currency": "Yuan Chinois",
@@ -146,7 +155,8 @@
       "temperature": 22
     },
     "localTime": "20:30",
-    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Great_Wall_of_China_July_2006.jpg",
-    "timezone": "Asia/Shanghai"
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/7/75/20090529_Great_Wall_8216.jpg",
+    "timezone": "Asia/Shanghai",
+    "hint": "C'est le pays des pandas."
   }
 ]
