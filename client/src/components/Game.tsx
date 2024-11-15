@@ -73,7 +73,6 @@ export default function Game() {
           <img src={question.type.image || ""} alt={question.type.label} />
         )}
       </section>
-
       <section>
         <h2>Indice: {hint}</h2>
         <div>
