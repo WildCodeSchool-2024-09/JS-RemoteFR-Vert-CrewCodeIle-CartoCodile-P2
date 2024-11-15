@@ -1,32 +1,24 @@
+import data from "../assets/data/clientdata.json";
 import ClientCard from "../components/ClientCard";
+import type { ClientType } from "../lib/definitions";
 
 export default function About() {
+  const ClientList: ClientType[] = data;
+
   return (
     <main>
       <h2 className="m-auto mt-4 w-fit font font-Koulen text-3xl text-primary">
         NOTRE EQUIPE
       </h2>
       <section className="flex flex-col lg:flex-row items-center justify-center gap-2 my-4 ">
-        <ClientCard
-          profilepic="https://randomuser.me/api/portraits/men/26.jpg"
-          clientName="Patrick Chombier"
-          clientJob="Professeur de Géographie"
-        />
-        <ClientCard
-          profilepic="https://randomuser.me/api/portraits/men/31.jpg"
-          clientName="Francis Laglanne"
-          clientJob="Géographe"
-        />
-        <ClientCard
-          profilepic="https://randomuser.me/api/portraits/women/52.jpg"
-          clientName="Marjorie Poulain"
-          clientJob="Urbaniste"
-        />
-        <ClientCard
-          profilepic="https://randomuser.me/api/portraits/women/75.jpg"
-          clientName="Sandrine Jabon"
-          clientJob="Climatologue"
-        />
+        {ClientList?.map((c: ClientType) => (
+          <ClientCard
+            key={c.id}
+            profilepic={c.profilepic}
+            clientName={c.clientName}
+            clientJob={c.clientJob}
+          />
+        ))}
       </section>
       <section>
         <h2 className="m-auto my-4 w-fit font font-Koulen text-3xl text-primary">
