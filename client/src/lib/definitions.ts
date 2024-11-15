@@ -32,3 +32,9 @@ export type Question = {
     label: string;
   };
 };
+export type ClientType = {
+  id: number;
+  profilepic: string;
+  clientName: string;
+  clientJob: string;
+};

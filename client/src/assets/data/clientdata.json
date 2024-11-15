@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "profilepic": "https://randomuser.me/api/portraits/men/26.jpg",
+    "clientName": "Patrick Chombier",
+    "clientJob": "Professeur de Géographie"
+  },
+  {
+    "id": 2,
+    "profilepic": "https://randomuser.me/api/portraits/men/31.jpg",
+    "clientName": "Francis Laglanne",
+    "clientJob": "Géographe"
+  },
+  {
+    "id": 3,
+    "profilepic": "https://randomuser.me/api/portraits/women/52.jpg",
+    "clientName": "Marjorie Poulain",
+    "clientJob": "Urbaniste"
+  },
+  {
+    "id": 4,
+    "profilepic": "https://randomuser.me/api/portraits/women/75.jpg",
+    "clientName": "Sandrine Jabon",
+    "clientJob": "Climatologue"
+  }
+]
