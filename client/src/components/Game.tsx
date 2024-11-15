@@ -6,6 +6,8 @@ export default function Game() {
   const [answers, setAnswers] = useState<string[]>([]);
   const [hint, setHint] = useState<string>("");
 
+  const [openHint, setOpenHint] = useState("invisible");
+
   useEffect(() => {
     Promise.all([
       fetch("http://localhost:3310/api/countries").then((res) => {
@@ -47,7 +49,7 @@ export default function Game() {
   const getQuestionType = (country: Country) => {
     const questionTypes = [
       { image: country.monumentImage, label: "monument" },
-      { image: null, label: "capital" },
+      { image: null, label: "capitale" },
     ];
     return questionTypes[Math.floor(Math.random() * questionTypes.length)];
   };
@@ -63,21 +65,47 @@ export default function Game() {
     return <div>Chargement des valises...</div>;
   }
 
+  const handleClick = () => {
+    openHint === "visible" ? setOpenHint("invisible") : setOpenHint("visible");
+  };
+
   return (
-    <div>
-      <h2>Type de question: {question.type.label}</h2>
-      <section>
-        {question.type.label === "capital" ? (
+    <div className="flex flex-col p-4 items-center">
+      <h2 className="invisible">Type de question: {question.type.label}</h2>
+      <section className="font-Koulen text-lg">
+        {question.type.label === "capitale" ? (
           <p>{question.country.capital}</p>
         ) : (
-          <img src={question.type.image || ""} alt={question.type.label} />
+          <img
+            className="resized"
+            src={question.type.image || ""}
+            alt={question.type.label}
+          />
         )}
       </section>
       <section>
-        <h2>Indice: {hint}</h2>
-        <div>
+        <section className="flex p-2 justify-center items-center bg-secondary h-12 rounded m-2">
+          <h1 className="font-Koulen text-lg ">
+            Dans quel pays nous situons nous ?
+          </h1>
+        </section>
+        <button type="button" onClick={handleClick} className="visible">
+          <p>
+            <img
+              className="pt-2 self-center w-6 m-auto"
+              src="\public\images\indice (1).png"
+              alt="Indice"
+            />
+          </p>
+          <p className={openHint}>Indice: {hint}</p>
+        </button>
+        <div className="flex flex-col gap-2">
           {answers.map((answer) => (
-            <button type="button" key={answer}>
+            <button
+              className="bg-primary text-secondary rounded-lg h-10 uppercase"
+              type="button"
+              key={answer}
+            >
               {answer}
             </button>
           ))}
