@@ -69,6 +69,10 @@ export default function Game() {
     openHint === "visible" ? setOpenHint("invisible") : setOpenHint("visible");
   };
 
+  const handleAnswer = () => {
+    alert(" ");
+  };
+
   return (
     <div className="flex flex-col p-4 items-center">
       <h2 className="invisible">Type de question: {question.type.label}</h2>
@@ -105,6 +109,7 @@ export default function Game() {
               className="bg-primary text-secondary rounded-lg h-10 uppercase"
               type="button"
               key={answer}
+              onClick={handleAnswer}
             >
               {answer}
             </button>
