@@ -23,7 +23,7 @@ export type Question = {
   hint: string;
 };
 
-export type CountryCardtype = {
+export type CountryCardType = {
   id: number;
   countryName: string;
   flag: string;
