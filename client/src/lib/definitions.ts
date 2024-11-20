@@ -38,3 +38,8 @@ export type ClientType = {
   clientName: string;
   clientJob: string;
 };
+export type FunFactType = {
+  id: number;
+  countryName: string;
+  funFact: string;
+};

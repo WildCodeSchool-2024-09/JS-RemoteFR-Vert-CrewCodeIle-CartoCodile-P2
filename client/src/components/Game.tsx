@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { Country, Question } from "./lib/definitions";
+import type { Country, Question } from "../lib/definitions";
 
 export default function Game() {
   const [question, setQuestion] = useState<Question | null>(null);
