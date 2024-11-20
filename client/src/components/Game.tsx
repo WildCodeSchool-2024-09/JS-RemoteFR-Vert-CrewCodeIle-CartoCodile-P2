@@ -2,11 +2,17 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import type { Country, Question } from "../lib/definitions";
 
+/**
+ * Le jeu est basé sur 5 questions
+ */
+const number_of_questions = 5;
+
 export default function Game() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [openHint, setOpenHint] = useState<string>("invisible");
+  const [isOpenHint, setIsOpenHint] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -14,10 +20,13 @@ export default function Game() {
   }, []);
 
   const fetchQuestions = () => {
+    const baseUrl = import.meta.env.VITE_API_URL;
+
     Promise.all([
-      fetch("http://localhost:3310/api/countries").then((res) => res.json()),
-      fetch("http://localhost:3310/api/badcountries").then((res) => res.json()),
+      fetch(`${baseUrl}/api/countries`).then((res) => res.json()),
+      fetch(`${baseUrl}/api/badcountries`).then((res) => res.json()),
     ])
+
       .then(([countriesData, badCountriesData]) => {
         const generatedQuestions = generateAllQuestions(
           countriesData,
@@ -32,13 +41,19 @@ export default function Game() {
     countries: Country[],
     badCountries: Country[],
   ) => {
+    /**
+     * C'est la fonction pour recréer un tableau dans lequel je viens piocher mes questions pour le jeu afin d'éviter d'avoir deux fois la même question
+     */
     const questions: Question[] = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < number_of_questions; i++) {
       const randomCountry =
         countries[Math.floor(Math.random() * countries.length)];
       const questionType = getQuestionType(randomCountry);
       const correctAnswer = randomCountry.countryName;
       const badAnswers = getRandomBadCountries(badCountries);
+      /**
+       * C'est la fonction qui mélange les réponses du QCM pour ne pas que la bonne réponse soit toujours au même endroit
+       */
       const allAnswers = shuffleArray([correctAnswer, ...badAnswers]);
 
       questions.push({
@@ -78,9 +93,9 @@ export default function Game() {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
       setSelectedAnswer(null);
-      setOpenHint("invisible");
+      setIsOpenHint(false);
     } else {
-      navigate("/");
+      return navigate("/");
     }
   };
 
@@ -91,7 +106,7 @@ export default function Game() {
   };
 
   const handleHintClick = () => {
-    setOpenHint(openHint === "visible" ? "invisible" : "visible");
+    setIsOpenHint((prev) => !prev);
   };
 
   if (questions.length === 0) {
@@ -111,7 +126,10 @@ export default function Game() {
         ) : (
           <img
             className="resized"
-            src={currentQuestion.type.image || ""}
+            src={
+              currentQuestion.type.image ||
+              "/images/business-concept-glass-world-laptop.jpg"
+            }
             alt={currentQuestion.type.label}
           />
         )}
@@ -125,10 +143,10 @@ export default function Game() {
         <button type="button" className="visible" onClick={handleHintClick}>
           <img
             className="pt-2 self-center w-6 m-auto"
-            src="\public\images\indice (1).png"
+            src="/images/indice (1).png"
             alt="Indice"
           />
-          <p className={openHint}>Indice: {currentQuestion.hint}</p>
+          {isOpenHint && <p className="mt-2">Indice: {currentQuestion.hint}</p>}
         </button>
         <div className="flex flex-col gap-2">
           {currentQuestion.answers.map((answer) => (
