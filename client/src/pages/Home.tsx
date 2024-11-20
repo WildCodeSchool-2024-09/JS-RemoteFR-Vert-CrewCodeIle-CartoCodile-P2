@@ -1,6 +1,6 @@
+import FunFactCard from "../components/FunFactCard";
 import PseudoForm from "../components/PseudoForm";
 import Rules from "../components/Rules";
-import FunFactCard from "../components/FunFactCard";
 
 export default function Home() {
   return (
