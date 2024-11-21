@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import type { Question } from "../lib/definitions";
-import type { CountryCardtype } from "../lib/definitions";
+import type { CountryCardType } from "../lib/definitions";
 
 export default function CountryCard({ questionId }: { questionId: Question }) {
   const countriesData = import.meta.env.VITE_API_COUNTRIES;
   const [countriesDetails, setCountriesDetails] = useState<
-    CountryCardtype[] | null
+    CountryCardType[] | null
   >(null);
 
   useEffect(() => {
