@@ -116,16 +116,16 @@ export default function Game() {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="flex flex-col p-4 items-center">
-      <h2 className="invisible">
+    <div className="flex flex-col p-4 items-center lg:gap-5">
+      <h2 className="invisible lg:text-3xl">
         Type de question: {currentQuestion.type.label}
       </h2>
-      <section className="font-Koulen text-lg">
+      <section className="flex justify-center lg:mb-7 lg:gap-5 font-Koulen text-4xl mb-4 lg:text-6xl">
         {currentQuestion.type.label === "capitale" ? (
           <p>{currentQuestion.country.capital}</p>
         ) : (
           <img
-            className="resized"
+            className="w-80 lg:w-96 lg:h-auto "
             src={
               currentQuestion.type.image ||
               "/images/business-concept-glass-world-laptop.jpg"
@@ -134,24 +134,30 @@ export default function Game() {
           />
         )}
       </section>
-      <section>
-        <section className="flex p-2 justify-center items-center bg-secondary h-12 rounded m-2">
-          <h1 className="font-Koulen text-lg ">
+      <section className="w-80 lg:w-auto flex flex-col lg:gap-5 items-center">
+        <section className="flex flex-col p-2 items-center bg-secondary h-12 rounded m-2">
+          <h2 className="font-Koulen w-80 text-xl lg:mx-8 lg:text-2xl lg:w-auto text-center">
             Dans quel pays nous situons nous ?
-          </h1>
+          </h2>
         </section>
-        <button type="button" className="visible" onClick={handleHintClick}>
-          <img
-            className="pt-2 self-center w-6 m-auto"
-            src="/images/indice (1).png"
-            alt="Indice"
-          />
-          {isOpenHint && <p className="mt-2">Indice: {currentQuestion.hint}</p>}
-        </button>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col lg:gap-5 items-center m-3">
+          <button type="button" className="visible" onClick={handleHintClick}>
+            <img
+              className="pt-2 self-center w-6 m-auto"
+              src="/images/indice (1).png"
+              alt="Indice"
+            />
+            {isOpenHint && (
+              <p className="mt-2 font-NotoSans">
+                Indice: {currentQuestion.hint}
+              </p>
+            )}
+          </button>
+        </div>
+        <div className="flex flex-col w-80 lg:gap-5 lg:w-2/3 lg:flex-row lg:flex-wrap lg:justify-center items-center gap-2">
           {currentQuestion.answers.map((answer) => (
             <button
-              className={`rounded-lg h-10 uppercase ${getButtonClass(answer)}`}
+              className={`rounded-lg lg:text-2xl font-NotoSans text-xl h-10 uppercase ${getButtonClass(answer)} w-80 lg:w-96`}
               type="button"
               key={answer}
               disabled={!!selectedAnswer}
@@ -163,12 +169,12 @@ export default function Game() {
         </div>
         <div className="flex justify-center mt-4">
           <button
-            className="text-secondary font-Koulen bg-accent rounded p-2"
+            className="text-secondary lg:text-2xl font-Koulen bg-accent rounded p-2"
             type="button"
             onClick={handleNextQuestionClick}
           >
             {currentQuestionIndex === questions.length - 1
-              ? "Retour à l'accueil"
+              ? "Retour a l'accueil"
               : "Question suivante"}
           </button>
         </div>
