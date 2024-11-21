@@ -117,6 +117,9 @@ export default function Game() {
 
   return (
     <div className="flex flex-col p-4 items-center">
+      <h3 className="font-Koulen text-4xl text-primary mt-4">
+        {currentQuestionIndex + 1} / 5
+      </h3>
       <h2 className="invisible">
         Type de question: {currentQuestion.type.label}
       </h2>
