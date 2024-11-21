@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import type { Country, Question } from "../lib/definitions";
+import type { Country, GoodCountryQuestion } from "../lib/definitions";
 
 /**
  * Le jeu est basé sur 5 questions
@@ -8,7 +8,7 @@ import type { Country, Question } from "../lib/definitions";
 const number_of_questions = 5;
 
 export default function Game() {
-  const [questions, setQuestions] = useState<Question[]>([]);
+  const [goodCountries, setGoodCountries] = useState<GoodCountryQuestion[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isOpenHint, setIsOpenHint] = useState(false);
@@ -26,13 +26,12 @@ export default function Game() {
       fetch(`${baseUrl}/api/countries`).then((res) => res.json()),
       fetch(`${baseUrl}/api/badcountries`).then((res) => res.json()),
     ])
-
       .then(([countriesData, badCountriesData]) => {
         const generatedQuestions = generateAllQuestions(
           countriesData,
           badCountriesData,
         );
-        setQuestions(generatedQuestions);
+        setGoodCountries(generatedQuestions);
       })
       .catch((error) => console.error("Error fetching data:", error));
   };
@@ -44,7 +43,7 @@ export default function Game() {
     /**
      * C'est la fonction pour recréer un tableau dans lequel je viens piocher mes questions pour le jeu afin d'éviter d'avoir deux fois la même question
      */
-    const questions: Question[] = [];
+    const goodCountries: GoodCountryQuestion[] = [];
     for (let i = 0; i < number_of_questions; i++) {
       const randomCountry =
         countries[Math.floor(Math.random() * countries.length)];
@@ -56,7 +55,7 @@ export default function Game() {
        */
       const allAnswers = shuffleArray([correctAnswer, ...badAnswers]);
 
-      questions.push({
+      goodCountries.push({
         id: randomCountry.id,
         country: randomCountry,
         type: questionType,
@@ -64,7 +63,7 @@ export default function Game() {
         hint: randomCountry.hint,
       });
     }
-    return questions;
+    return goodCountries;
   };
 
   const getQuestionType = (country: Country) => {
@@ -90,7 +89,7 @@ export default function Game() {
   };
 
   const handleNextQuestionClick = () => {
-    if (currentQuestionIndex < questions.length - 1) {
+    if (currentQuestionIndex < goodCountries.length - 1) {
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
       setSelectedAnswer(null);
       setIsOpenHint(false);
@@ -109,11 +108,11 @@ export default function Game() {
     setIsOpenHint((prev) => !prev);
   };
 
-  if (questions.length === 0) {
+  if (goodCountries.length === 0) {
     return <div>Chargement des valises...</div>;
   }
 
-  const currentQuestion = questions[currentQuestionIndex];
+  const currentQuestion = goodCountries[currentQuestionIndex];
 
   return (
     <div className="flex flex-col p-4 items-center">
@@ -167,7 +166,7 @@ export default function Game() {
             type="button"
             onClick={handleNextQuestionClick}
           >
-            {currentQuestionIndex === questions.length - 1
+            {currentQuestionIndex === goodCountries.length - 1
               ? "Retour à l'accueil"
               : "Question suivante"}
           </button>

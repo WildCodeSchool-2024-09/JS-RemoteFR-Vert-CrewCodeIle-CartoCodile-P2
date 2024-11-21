@@ -12,18 +12,16 @@ export type BadCountries = {
   countryName: string;
 };
 
-export type GoodCountryQuestion = {
+export type Question = {
   id: number;
   country: Country;
   type: {
     image: string | null;
     label: string;
   };
-  answers: string[];
-  hint: string;
 };
 
-export type CountryCardType = {
+export type CountryCardtype = {
   id: number;
   countryName: string;
   flag: string;
@@ -38,10 +36,4 @@ export type CountryCardType = {
   monumentImage: string;
   timezone: string;
   hint: string;
-};
-export type ClientType = {
-  id: number;
-  profilepic: string;
-  clientName: string;
-  clientJob: string;
 };

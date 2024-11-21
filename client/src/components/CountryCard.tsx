@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import type { Question } from "../lib/definitions";
+import type { GoodCountryQuestion } from "../lib/definitions";
 import type { CountryCardType } from "../lib/definitions";
 
-export default function CountryCard({ questionId }: { questionId: Question }) {
+export default function CountryCard({
+  questionId,
+}: { questionId: GoodCountryQuestion }) {
   const countriesData = import.meta.env.VITE_API_COUNTRIES;
   const [countriesDetails, setCountriesDetails] = useState<
     CountryCardType[] | null
