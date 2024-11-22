@@ -1,3 +1,28 @@
+export type Country = {
+  id: number;
+  countryName: string;
+  hint: string;
+  flag: string;
+  capital: string;
+  monumentImage: string;
+};
+
+export type BadCountries = {
+  id: number;
+  countryName: string;
+};
+
+export type Question = {
+  id: number;
+  country: Country;
+  type: {
+    image: string | null;
+    label: string;
+  };
+  answers: string[];
+  hint: string;
+};
+
 export type CountryCardType = {
   id: number;
   countryName: string;
@@ -14,27 +39,14 @@ export type CountryCardType = {
   timezone: string;
   hint: string;
 };
-
-export type Country = {
-  id: number;
-  countryName: string;
-  hint: string;
-  flag: string;
-  capital: string;
-  monumentImage: string;
-};
-
-export type Question = {
-  id: number;
-  country: Country;
-  type: {
-    image: string | null;
-    label: string;
-  };
-};
 export type ClientType = {
   id: number;
   profilepic: string;
   clientName: string;
   clientJob: string;
+};
+export type FunFactType = {
+  id: number;
+  countryName: string;
+  funFact: string;
 };

@@ -3,6 +3,7 @@ import express from "express";
 const app = express();
 const countries = require("./data/countries.json");
 const badcountries = require("./data/badcountries.json");
+const funfacts = require("./data/funfacts.json");
 
 // app.get("/api/countries/:id", (req, res) => {
 //   const countryId = +req.params.id;
@@ -82,6 +83,9 @@ app.get("/api/badcountries", (req, res) => {
   res.json(badcountries);
 });
 
+app.get("/api/funfacts", (req, res) => {
+  res.json(funfacts);
+});
 // import countries from './data/countries.json';
 
 // Production-ready setup: What is it for?
