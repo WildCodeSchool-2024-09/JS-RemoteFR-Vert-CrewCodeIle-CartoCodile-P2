@@ -116,11 +116,14 @@ export default function Game() {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="flex flex-col p-4 items-center lg:gap-5">
+    <div className="flex flex-col p-4 items-center">
+      <h3 className="font-Koulen text-4xl text-primary mt-4">
+        {currentQuestionIndex + 1} / 5
+      </h3>
       <h2 className="invisible lg:text-3xl">
         Type de question: {currentQuestion.type.label}
       </h2>
-      <section className="flex justify-center lg:mb-7 lg:gap-5 font-Koulen text-lg text-xl lg:text-6xl">
+      <section className="flex justify-center lg:mb-7 lg:gap-5 font-Koulen text-xl lg:text-6xl">
         {currentQuestion.type.label === "capitale" ? (
           <p>{currentQuestion.country.capital}</p>
         ) : (
