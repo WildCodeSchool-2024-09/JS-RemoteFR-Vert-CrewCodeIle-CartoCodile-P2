@@ -7,7 +7,6 @@ export default {
         primary: "#202C39",
         secondary: "#EBEBEB",
         accent: "#4CAF50",
-        cards: "#344E6A",
       },
       fontFamily: {
         Koulen: "Koulen",
