@@ -12,7 +12,7 @@ export type BadCountries = {
   countryName: string;
 };
 
-export type Question = {
+export type GoodCountryQuestion = {
   id: number;
   country: Country;
   type: {
