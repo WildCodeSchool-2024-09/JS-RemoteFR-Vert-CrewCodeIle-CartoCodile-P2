@@ -100,7 +100,7 @@ export default function Game() {
   };
 
   const getButtonClass = (answer: string) => {
-    if (!selectedAnswer) return "bg-primary text-secondary";
+    if (!selectedAnswer) return "bg-indigo-900 text-secondary";
     if (answer === currentQuestion.country.countryName) return "bg-green-500";
     return "bg-red-500";
   };
@@ -120,7 +120,7 @@ export default function Game() {
       <h2 className="invisible lg:text-3xl">
         Type de question: {currentQuestion.type.label}
       </h2>
-      <section className="flex justify-center lg:mb-7 lg:gap-5 font-Koulen text-4xl mb-4 lg:text-6xl">
+      <section className="flex justify-center lg:mb-7 lg:gap-5 font-Koulen text-lg text-xl lg:text-6xl">
         {currentQuestion.type.label === "capitale" ? (
           <p>{currentQuestion.country.capital}</p>
         ) : (
