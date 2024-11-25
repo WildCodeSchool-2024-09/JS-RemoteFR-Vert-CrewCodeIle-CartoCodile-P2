@@ -9,6 +9,7 @@ export default function PseudoForm() {
       <h2 className="font-Koulen text-xl text-primary font-semibold">
         PRET A JOUER ?
       </h2>
+      <h3>EST CE QUE CA MARCHE</h3>
       <p className="font-NotoSans text-primary">
         Entre ton pseudo et c'est parti !
       </p>
