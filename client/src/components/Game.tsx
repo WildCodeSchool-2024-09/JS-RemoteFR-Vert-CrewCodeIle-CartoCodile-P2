@@ -172,6 +172,7 @@ export default function Game() {
               {answer}
             </button>
           ))}
+
           {isOpenCard && <CountryCard currentQuestion={currentQuestion} />}
         </div>
         <div className="flex justify-center mt-4">

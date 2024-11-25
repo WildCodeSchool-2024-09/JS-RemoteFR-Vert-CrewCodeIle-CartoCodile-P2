@@ -23,35 +23,35 @@ export default function CountryCard({
   return (
     <div className="flex justify-center">
       {!isClosed && countriesDetails && (
-        <section className="bg-primary rounded-lg flex flex-col my-2 w-11/12 p-16">
+        <section className="bg-indigo-900 rounded-lg flex flex-col my-2 w-11/12 p-16 inset-0 fixed mx-auto backdrop-blur-md">
           <img
             className="self-center rounded-md"
             src={countriesDetails.flag}
             alt="un monument"
           />
-          <section key={currentQuestion.id}>
+          <section className="flex flex-col gap-4" key={currentQuestion.id}>
             <h2 className="self-center m-8 mb-8 text-secondary">
               {countriesDetails.countryName}
             </h2>
             <span className="text-secondary">
-              CAPITALE: {countriesDetails.capital}
+              CAPITALE : {countriesDetails.capital}
             </span>
             <span className="text-secondary">
-              NOMBRE D'HABITANTS:{countriesDetails.population}
+              NOMBRE D'HABITANTS :{countriesDetails.population}
             </span>
             <span className="text-secondary">
-              METEO ACTUELLE:{countriesDetails.weather.description},{" "}
+              METEO ACTUELLE : {countriesDetails.weather.description},{" "}
               {countriesDetails.weather.temperature}
             </span>
             <span className="text-secondary">
-              MONNAIE:{countriesDetails.currency}
+              MONNAIE : {countriesDetails.currency}
             </span>
             <span className="text-secondary">
-              HEURE LOCALE:{countriesDetails.localTime}
+              HEURE LOCALE : {countriesDetails.localTime}
             </span>
           </section>
           <button
-            className="mt-8 bg-accent w-60 self-center rounded-md h-12 text-secondary"
+            className="mt-8 bg-accent w-fit p-4 mx-auto self-center rounded-md text-secondary"
             type="button"
             onClick={() => setIsClosed(!isClosed)}
           >
