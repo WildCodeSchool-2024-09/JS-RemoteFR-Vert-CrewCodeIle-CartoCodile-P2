@@ -3,7 +3,7 @@ import type { Question } from "../lib/definitions";
 import type { CountryCardType } from "../lib/definitions";
 
 export default function CountryCard({ question }: { question: Question }) {
-  const countriesData = import.meta.env.VITE_API_COUNTRIES;
+  const countriesData = import.meta.env.VITE_API_COUNTRIES_URL;
   const [countriesDetails, setCountriesDetails] = useState<
     CountryCardType[] | null
   >(null);
@@ -55,4 +55,4 @@ export default function CountryCard({ question }: { question: Question }) {
       </section>
     </div>
   );
-}
+} 
