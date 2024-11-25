@@ -55,4 +55,4 @@ export default function CountryCard({ question }: { question: Question }) {
       </section>
     </div>
   );
-} 
+}
