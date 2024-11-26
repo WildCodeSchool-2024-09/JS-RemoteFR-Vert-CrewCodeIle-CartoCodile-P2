@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import type { Country, GoodCountryQuestion } from "../lib/definitions";
+import CountryCard from "./CountryCard";
 
 /**
  * Le jeu est basé sur 5 questions
@@ -12,6 +13,7 @@ export default function Game() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isOpenHint, setIsOpenHint] = useState(false);
+  const [isOpenCard, setIsOpenCard] = useState(false);
 
   const navigate = useNavigate();
 
@@ -87,6 +89,7 @@ export default function Game() {
 
   const handleAnswerClick = (answer: string) => {
     setSelectedAnswer(answer);
+    setIsOpenCard(true);
   };
 
   const handleNextQuestionClick = () => {
@@ -169,6 +172,14 @@ export default function Game() {
               {answer}
             </button>
           ))}
+
+          {isOpenCard && (
+            <CountryCard
+              currentQuestion={currentQuestion}
+              setIsOpenCard={setIsOpenCard}
+              isOpenCard={isOpenCard}
+            />
+          )}
         </div>
         <div className="flex justify-center mt-4">
           <button
