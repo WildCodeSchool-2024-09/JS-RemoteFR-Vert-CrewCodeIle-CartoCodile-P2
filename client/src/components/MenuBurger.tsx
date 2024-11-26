@@ -2,23 +2,24 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function MenuBurger() {
-  const [openBurger, setOpenBurger] = useState("invisible");
+  const [isOpenMenuBurger, setisOpenMenuBurger] = useState<boolean>(false);
 
-  const handleClick = () => {
-    openBurger === "invisible"
-      ? setOpenBurger("visible")
-      : setOpenBurger("invisible");
+  const handleIsOpenMenuBurger = () => {
+    setisOpenMenuBurger(!isOpenMenuBurger);
   };
 
   return (
-    <>
-      <nav className="p-4">
-        <button className="menuBurger" type="button" onClick={handleClick}>
-          <span className="burgerLine lg:invisible" />
-          <span className="burgerLine lg:invisible" />
-          <span className="burgerLine lg:invisible" />
-        </button>
-        <div className={openBurger}>
+    <section className="flex flex-col pr-6">
+      <button type="button" onClick={handleIsOpenMenuBurger}>
+        <section className="flex flex-col gap-2 mt-6 mb-3">
+          <span className="bg-white w-12 h-1" />
+          <span className="bg-white w-12 h-1" />
+          <span className="bg-white w-12 h-1" />
+        </section>
+      </button>
+
+      {isOpenMenuBurger && (
+        <nav>
           <ul className="lg:flex lg:flex-row lg:gap-8">
             <li>
               <Link
@@ -37,22 +38,9 @@ export default function MenuBurger() {
               </Link>
             </li>
           </ul>
-        </div>
-      </nav>
-
-      <style>
-        {`.burgerLine {
-          display:block;
-          width:3em;
-          height:0.3em;
-          background-color:white;
-          margin-bottom:0.5em;
-          }
-
-          .menuBurger{
-           margin-top:0.5em;
-      }`}
-      </style>
-    </>
+          <span className="bg-white w-10 h-2" />
+        </nav>
+      )}
+    </section>
   );
 }
