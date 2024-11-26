@@ -105,7 +105,8 @@ export default function Game() {
   };
 
   const getButtonClass = (answer: string) => {
-    if (!selectedAnswer) return "bg-indigo-900 text-secondary";
+    if (!selectedAnswer)
+      return "bg-indigo-900 text-secondary hover:bg-indigo-700";
     if (answer === currentQuestion.country.countryName) return "bg-green-500";
     return "bg-red-500";
   };
@@ -149,7 +150,11 @@ export default function Game() {
           </h2>
         </section>
         <div className="flex flex-col lg:gap-5 items-center m-3">
-          <button type="button" className="visible" onClick={handleHintClick}>
+          <button
+            type="button"
+            className="visible hover:scale-110 transition-transform duration-20"
+            onClick={handleHintClick}
+          >
             <img
               className="pt-2 self-center w-6 m-auto"
               src="/images/indice (1).png"
@@ -185,7 +190,13 @@ export default function Game() {
         </div>
         <div className="flex justify-center mt-4">
           <button
-            className="text-secondary lg:text-2xl font-Koulen bg-accent rounded p-2"
+            className="text-secondary lg:text-2xl font-Koulen bg-accent rounded p-2 
+             relative overflow-hidden 
+             hover:scale-105 hover:shadow-lg 
+             before:absolute before:top-0 before:left-0 before:w-0 before:h-full
+             before:bg-white/20 before:transition-all before:duration-300 before:ease-out 
+             hover:before:w-full 
+             transition-all duration-300"
             type="button"
             onClick={handleNextQuestionClick}
           >
