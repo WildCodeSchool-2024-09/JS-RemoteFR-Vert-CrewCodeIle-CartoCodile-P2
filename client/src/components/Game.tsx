@@ -38,7 +38,6 @@ export default function Game() {
       })
       .catch((error) => console.error("Error fetching data:", error));
   };
-
   const generateAllQuestions = (
     countries: Country[],
     badCountries: Country[],
@@ -47,9 +46,12 @@ export default function Game() {
      * C'est la fonction pour recréer un tableau dans lequel je viens piocher mes questions pour le jeu afin d'éviter d'avoir deux fois la même question
      */
     const goodCountries: GoodCountryQuestion[] = [];
+    const availableCountries = [...countries];
+
     for (let i = 0; i < number_of_questions; i++) {
-      const randomCountry =
-        countries[Math.floor(Math.random() * countries.length)];
+      const randomIndex = Math.floor(Math.random() * availableCountries.length);
+      const randomCountry = availableCountries.splice(randomIndex, 1)[0];
+
       const questionType = getQuestionType(randomCountry);
       const correctAnswer = randomCountry.countryName;
       const badAnswers = getRandomBadCountries(badCountries);
