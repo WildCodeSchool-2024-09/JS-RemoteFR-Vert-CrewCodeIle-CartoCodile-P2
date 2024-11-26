@@ -173,7 +173,13 @@ export default function Game() {
             </button>
           ))}
 
-          {isOpenCard && <CountryCard currentQuestion={currentQuestion} />}
+          {isOpenCard && (
+            <CountryCard
+              currentQuestion={currentQuestion}
+              setIsOpenCard={setIsOpenCard}
+              isOpenCard={isOpenCard}
+            />
+          )}
         </div>
         <div className="flex justify-center mt-4">
           <button

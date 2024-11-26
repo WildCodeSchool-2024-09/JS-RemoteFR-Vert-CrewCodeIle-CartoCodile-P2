@@ -4,11 +4,22 @@ import type { CountryCardType } from "../lib/definitions";
 
 export default function CountryCard({
   currentQuestion,
-}: { currentQuestion: GoodCountryQuestion }) {
+  setIsOpenCard,
+  isOpenCard,
+}: {
+  setIsOpenCard: (isOpenCard: boolean) => void;
+  isOpenCard: boolean;
+  currentQuestion: GoodCountryQuestion;
+}) {
   const countriesData = import.meta.env.VITE_API_URL;
   const [countriesDetails, setCountriesDetails] =
     useState<CountryCardType | null>(null);
   const [isClosed, setIsClosed] = useState(false);
+
+  const handleIsOpenCardIsClosed = () => {
+    setIsOpenCard(!isOpenCard);
+    setIsClosed(!isClosed);
+  };
 
   useEffect(() => {
     fetch(`${countriesData}/api/countries`)
@@ -18,14 +29,14 @@ export default function CountryCard({
           data.find((c: CountryCardType) => c.id === currentQuestion.id),
         ),
       );
-  }, [currentQuestion.id]);
+  }, [currentQuestion]);
 
   return (
     <div className="flex justify-center">
       {!isClosed && countriesDetails && (
-        <section className="bg-indigo-900 rounded-lg flex flex-col my-2 w-11/12 p-16 inset-0 fixed mx-auto backdrop-blur-md">
+        <section className="bg-indigo-900 rounded-lg flex flex-col my-2 w-11/12 p-16 inset-0 fixed mx-auto backdrop-blur-md lg:w-1/2">
           <img
-            className="self-center rounded-md"
+            className="self-center rounded-md lg:w-5/12"
             src={countriesDetails.flag}
             alt="un monument"
           />
@@ -51,9 +62,9 @@ export default function CountryCard({
             </span>
           </section>
           <button
-            className="mt-8 bg-accent w-fit p-4 mx-auto self-center rounded-md text-secondary"
+            className="mt-8 bg-accent w-fit p-4 mx-auto self-center rounded-md text-secondary lg:w-5/12"
             type="button"
-            onClick={() => setIsClosed(!isClosed)}
+            onClick={handleIsOpenCardIsClosed}
           >
             FERMER
           </button>
