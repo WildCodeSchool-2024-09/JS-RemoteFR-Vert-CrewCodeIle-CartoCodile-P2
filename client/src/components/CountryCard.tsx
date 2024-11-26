@@ -34,7 +34,7 @@ export default function CountryCard({
   return (
     <div className="flex justify-center">
       {!isClosed && countriesDetails && (
-        <section className="bg-indigo-900 rounded-lg flex flex-col my-2 w-11/12 p-16 inset-0 fixed mx-auto backdrop-blur-md lg:w-1/2">
+        <section className="bg-indigo-900 rounded-lg flex flex-col my-2 w-11/12 p-16 inset-0 fixed mx-auto lg:w-1/2">
           <img
             className="self-center rounded-md lg:w-5/12"
             src={countriesDetails.flag}
