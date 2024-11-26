@@ -28,7 +28,7 @@ export type CountryCardType = {
   countryName: string;
   flag: string;
   capital: string;
-  population: number;
+  population: string;
   currency: string;
   weather: {
     description: string;
