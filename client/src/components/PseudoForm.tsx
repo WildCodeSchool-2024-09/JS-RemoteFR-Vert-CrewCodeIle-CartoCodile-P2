@@ -35,7 +35,10 @@ export default function PseudoForm() {
         className="flex flex-col items-center"
         action=""
       >
-        <label htmlFor="userPseudo" className="font-Koulen text-l lg:text-xl text-primary">
+        <label
+          htmlFor="userPseudo"
+          className="font-Koulen text-l lg:text-xl text-primary"
+        >
           Quel est ton pseudo ?
         </label>
         <input
