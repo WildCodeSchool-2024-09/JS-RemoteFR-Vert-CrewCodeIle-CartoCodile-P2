@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Bounce, ToastContainer, toast } from "react-toastify";
 import { usePseudo } from "../context/PseudoData";
 import type { Country, GoodCountryQuestion } from "../lib/definitions";
 import CountryCard from "./CountryCard";
+import "react-toastify/dist/ReactToastify.css";
 
 /**
  * Le jeu est basé sur 5 questions
@@ -95,7 +97,20 @@ export default function Game() {
     setSelectedAnswer(answer);
     setIsOpenCard(true);
     if (currentQuestionIndex === 4) {
-      alert(`Bravo ${userPseudo[0].userPseudo} c'était la dernière question !`);
+      toast.success(
+        `Bravo ${userPseudo[0].userPseudo} c'est la fin du voyage !`,
+        {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+        },
+      );
     }
   };
 
@@ -131,6 +146,7 @@ export default function Game() {
       <h3 className="font-Koulen text-4xl text-primary mt-4">
         {currentQuestionIndex + 1} / 5
       </h3>
+      <ToastContainer />
       <h2 className="invisible lg:text-3xl">
         Type de question: {currentQuestion.type.label}
       </h2>
@@ -184,7 +200,6 @@ export default function Game() {
               {answer}
             </button>
           ))}
-
           {isOpenCard && (
             <section className="backdrop-blur-md inset-0 fixed lg:mx-auto lg:my-auto">
               <div className="my-16">
