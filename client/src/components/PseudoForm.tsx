@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { usePseudo } from "../context/PseudoData";
 import type { userData } from "../lib/definitions";
 
-
 export default function PseudoForm() {
   const [pseudo, setPseudo] = useState<string>("");
   const navigate = useNavigate();
