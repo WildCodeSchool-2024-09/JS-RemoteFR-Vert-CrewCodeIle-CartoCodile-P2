@@ -50,3 +50,6 @@ export type FunFactType = {
   countryName: string;
   funFact: string;
 };
+export type userData = {
+  userPseudo: string;
+};
