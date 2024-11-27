@@ -34,7 +34,7 @@ export default function CountryCard({
   return (
     <div className="flex justify-center">
       {!isClosed && countriesDetails && (
-        <section className="bg-indigo-900 rounded-lg flex flex-col my-2 w-11/12 p-4 mx-auto lg:w-2/5">
+        <section className="bg-indigo-900 rounded-lg flex flex-col my-2 w-11/12 p-4 lg:w-2/5">
           <img
             className="self-center rounded-md lg:w-3/6"
             src={countriesDetails.flag}
@@ -67,7 +67,14 @@ export default function CountryCard({
             </section>
           </section>
           <button
-            className="mt-8 bg-accent w-fit p-4 mx-auto self-center rounded-md text-secondary lg:w-fit lg:py-2"
+            className="mt-8 bg-accent w-fit p-4 mx-auto self-center rounded-md text-secondary lg:w-fit lg:py-2
+             text-secondary lg:text-2xl font-Koulen bg-accent rounded p-2 
+             relative overflow-hidden 
+             hover:scale-105 hover:shadow-lg 
+             before:absolute before:top-0 before:left-0 before:w-0 before:h-full
+             before:bg-white/20 before:transition-all before:duration-300 before:ease-out 
+             hover:before:w-full 
+             transition-all duration-300"
             type="button"
             onClick={handleIsOpenCardIsClosed}
           >
