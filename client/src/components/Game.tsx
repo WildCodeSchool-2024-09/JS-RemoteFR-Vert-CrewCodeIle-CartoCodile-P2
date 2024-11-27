@@ -181,19 +181,21 @@ export default function Game() {
           ))}
 
           {isOpenCard && (
-            <section className="backdrop-blur-md inset-0 fixed">
-              <CountryCard
-                currentQuestion={currentQuestion}
-                setIsOpenCard={setIsOpenCard}
-                isOpenCard={isOpenCard}
-              />
+            <section className="backdrop-blur-md inset-0 fixed lg:mx-auto lg:my-auto">
+              <div className="my-16">
+                <CountryCard
+                  currentQuestion={currentQuestion}
+                  setIsOpenCard={setIsOpenCard}
+                  isOpenCard={isOpenCard}
+                />
+              </div>
             </section>
           )}
         </div>
         <div className="flex justify-center mt-4">
           <button
             className="text-secondary lg:text-2xl font-Koulen bg-accent rounded p-2 
-             relative overflow-hidden 
+            overflow-hidden 
              hover:scale-105 hover:shadow-lg 
              before:absolute before:top-0 before:left-0 before:w-0 before:h-full
              before:bg-white/20 before:transition-all before:duration-300 before:ease-out 
