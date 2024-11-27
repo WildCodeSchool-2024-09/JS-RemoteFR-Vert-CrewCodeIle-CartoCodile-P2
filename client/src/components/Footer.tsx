@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <section className="bg-primary p-4 flex flex-col gap-2">
+    <section className="bg-primary p-4 flex flex-col gap-2 justify-end">
       <ul className="flex justify-between">
         <li>
           <a
