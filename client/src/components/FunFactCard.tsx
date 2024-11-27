@@ -21,7 +21,7 @@ const FunFactCard = () => {
       if (FactIndex === 9) {
         setFactIndex(0);
       }
-    }, 2000);
+    }, 5000);
     return () => clearInterval(intervalFacts);
   }, [FactIndex]);
 
