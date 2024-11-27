@@ -7,12 +7,12 @@ import PseudoProvider from "./context/PseudoData";
 
 export default function App() {
   return (
-    <>
+    <div className="flex flex-col h-screen justify-between">
       <Header />
       <PseudoProvider>
         <Outlet />
       </PseudoProvider>
       <Footer />
-    </>
+    </div>
   );
 }
