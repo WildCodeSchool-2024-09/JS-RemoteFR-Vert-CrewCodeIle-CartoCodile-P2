@@ -23,11 +23,11 @@ export default function PseudoForm() {
   };
 
   return (
-    <article className="p-4 bg-secondary rounded-md flex flex-col items-center gap-6 w-80 lg:w-80">
-      <h2 className="font-Koulen text-xl text-primary font-semibold">
+    <article className="p-4 bg-secondary rounded-md flex flex-col items-center w-80 gap-6 lg:gap-9 lg:w-96 lg:h-80">
+      <h2 className="font-Koulen text-xl lg:text-2xl text-primary font-semibold">
         PRET A JOUER ?
       </h2>
-      <p className="font-NotoSans text-primary">
+      <p className="font-NotoSans text-sm lg:text-xl text-primary">
         Entre ton pseudo et c'est parti !
       </p>
       <form
@@ -35,7 +35,10 @@ export default function PseudoForm() {
         className="flex flex-col items-center"
         action=""
       >
-        <label htmlFor="userPseudo" className="font-Koulen text-l text-primary">
+        <label
+          htmlFor="userPseudo"
+          className="font-Koulen text-l lg:text-xl text-primary"
+        >
           Quel est ton pseudo ?
         </label>
         <input
