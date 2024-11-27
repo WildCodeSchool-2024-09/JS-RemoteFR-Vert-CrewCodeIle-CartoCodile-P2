@@ -27,7 +27,7 @@ export default function Footer() {
           <li>
             <a
               href="https://www.facebook.com/"
-              className="flex flex-col-reverse items-center font-NotoSans text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+              className="flex flex-col-reverse items-center text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
             >
               {" "}
               Facebook
