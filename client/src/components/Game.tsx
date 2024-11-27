@@ -176,11 +176,13 @@ export default function Game() {
           ))}
 
           {isOpenCard && (
-            <CountryCard
-              currentQuestion={currentQuestion}
-              setIsOpenCard={setIsOpenCard}
-              isOpenCard={isOpenCard}
-            />
+            <section className="backdrop-blur-md inset-0 fixed">
+              <CountryCard
+                currentQuestion={currentQuestion}
+                setIsOpenCard={setIsOpenCard}
+                isOpenCard={isOpenCard}
+              />
+            </section>
           )}
         </div>
         <div className="flex justify-center mt-4">

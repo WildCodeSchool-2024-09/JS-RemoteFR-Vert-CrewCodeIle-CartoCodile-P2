@@ -34,7 +34,7 @@ export type CountryCardType = {
     description: string;
     temperature: number;
   };
-  localTime: string;
+  timeShift: string;
   monumentImage: string;
   timezone: string;
   hint: string;
