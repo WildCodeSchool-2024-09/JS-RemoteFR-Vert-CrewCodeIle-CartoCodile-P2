@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { usePseudo } from "../context/PseudoData";
 import type { Country, GoodCountryQuestion } from "../lib/definitions";
 import CountryCard from "./CountryCard";
 
@@ -14,6 +15,7 @@ export default function Game() {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isOpenHint, setIsOpenHint] = useState(false);
   const [isOpenCard, setIsOpenCard] = useState(false);
+  const userPseudo = usePseudo();
 
   const navigate = useNavigate();
 
@@ -92,6 +94,9 @@ export default function Game() {
   const handleAnswerClick = (answer: string) => {
     setSelectedAnswer(answer);
     setIsOpenCard(true);
+    if (currentQuestionIndex === 4) {
+      alert(`Bravo ${userPseudo[0].userPseudo} c'était la dernière question !`);
+    }
   };
 
   const handleNextQuestionClick = () => {
@@ -205,7 +210,7 @@ export default function Game() {
             onClick={handleNextQuestionClick}
           >
             {currentQuestionIndex === goodCountries.length - 1
-              ? "Retour à l'accueil"
+              ? "Retour a l'accueil"
               : "Question suivante"}
           </button>
         </div>
