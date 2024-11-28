@@ -32,7 +32,7 @@ export type CountryCardType = {
   currency: string;
   weather: {
     description: string;
-    temperature: number;
+    temperature: string;
   };
   timeShift: string;
   monumentImage: string;
