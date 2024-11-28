@@ -1,7 +1,7 @@
 const Rules = () => {
   return (
     <section className="bg-secondary p-4 rounded-lg my-4 flex flex-col gap-4 w-80 lg:w-96 lg:h-80">
-      <h2 className="text-xl lg:text-2xl font-semibold mb-2 text-primary font-Koulen">
+      <h2 className="text-xl lg:text-2xl font-semibold mb-2 text-center text-primary font-Koulen">
         LES REGLES ?
       </h2>
       <ul className="list-disc pl-4">
