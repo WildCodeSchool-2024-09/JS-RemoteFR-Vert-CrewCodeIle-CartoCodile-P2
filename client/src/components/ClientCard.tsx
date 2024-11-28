@@ -4,7 +4,7 @@ const ClientCard = ({
   clientJob,
 }: { profilepic: string; clientName: string; clientJob: string }) => {
   return (
-    <div className="bg-primary w-64 lg:w-56 h-64 py-1 flex flex-col items-center justify-center gap-3 rounded-md">
+    <div className="bg-indigo-900 w-64 lg:w-56 h-64 py-1 flex flex-col items-center justify-center gap-3 rounded-md">
       <img
         className="rounded-md w-32"
         src={profilepic}

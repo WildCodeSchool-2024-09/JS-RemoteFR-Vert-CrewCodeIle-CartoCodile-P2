@@ -26,7 +26,7 @@ const FunFactCard = () => {
   }, [FactIndex]);
 
   return (
-    <div className="bg-primary rounded-md">
+    <div className="bg-indigo-900 rounded-md">
       {popUp && (
         <section className="w-80 rounded-lg">
           <div className="font-Koulen text-xl text-secondary flex flex-row justify-between">
