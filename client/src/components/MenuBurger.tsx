@@ -43,12 +43,18 @@ export default function MenuBurger() {
       <nav className="invisible lg:visible">
         <ul className="lg:flex lg:flex-row lg:gap-8">
           <li>
-            <Link to="/" className="text-secondary text-lg font-Koulen">
+            <Link
+              to="/"
+              className="text-secondary text-lg font-Koulen lg:text-2xl"
+            >
               Accueil
             </Link>
           </li>
           <li>
-            <Link to="/About" className="text-secondary text-lg font-Koulen">
+            <Link
+              to="/About"
+              className="text-secondary text-lg font-Koulen lg:text-2xl"
+            >
               A propos
             </Link>
           </li>
