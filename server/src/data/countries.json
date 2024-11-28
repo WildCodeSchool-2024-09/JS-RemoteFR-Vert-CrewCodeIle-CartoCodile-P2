@@ -8,7 +8,7 @@
     "currency": "Euro",
     "weather": {
       "description": "Partiellement nuageux",
-      "temperature": 18
+      "temperature": "18 degrés"
     },
     "timeShift": "0 heure",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg",
@@ -24,7 +24,7 @@
     "currency": "Yen Japonais",
     "weather": {
       "description": "Ensoleillé",
-      "temperature": 24
+      "temperature": "24 degrés"
     },
     "timeShift": "+8 heures",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Mt._Fuji_from_Park_Hotel_Tokyo_%284457243468%29.jpg",
@@ -40,7 +40,7 @@
     "currency": "Dollar Américain",
     "weather": {
       "description": "pluvieux",
-      "temperature": 15
+      "temperature": "15 degrés"
     },
     "timeShift": "-6 heures",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/af/WhiteHouseSouthFacade.JPG",
@@ -56,7 +56,7 @@
     "currency": "Real Brésilien",
     "weather": {
       "description": "Ensoleillé",
-      "temperature": 28
+      "temperature": "28 degrés"
     },
     "timeShift": "-4 heures",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg",
@@ -72,7 +72,7 @@
     "currency": "Dollar Australien",
     "weather": {
       "description": "Nuageux",
-      "temperature": 12
+      "temperature": "12 degrés"
     },
     "timeShift": "+ 10 heures",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Sydney_Opera_House_-_Dec_2008.jpg",
@@ -88,7 +88,7 @@
     "currency": "Rand Sud-Américain",
     "weather": {
       "description": "Nuageux",
-      "temperature": 20
+      "temperature": "20 degrés"
     },
     "timeShift": "+1 heure",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/9/92/Mandela_statue_at_Drakenstein_Correctional_Facility_%2813263918723%29.jpg",
@@ -104,7 +104,7 @@
     "currency": "Roupie Indienne",
     "weather": {
       "description": "Brumeux",
-      "temperature": 29
+      "temperature": "29 degrés"
     },
     "timeShift": "+4 heures 30 minutes",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/7/74/Taj_Mahal%2C_Agra%2C_India_edit2.jpg",
@@ -120,7 +120,7 @@
     "currency": "Euro",
     "weather": {
       "description": "Pluvieux",
-      "temperature": 16
+      "temperature": "16 degrés"
     },
     "timeShift": "0 heure",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Brandenburger_Tor_nachts.jpg",
@@ -136,7 +136,7 @@
     "currency": "Rouble Russe",
     "weather": {
       "description": "Neigeux",
-      "temperature": -5
+      "temperature": "-5 degrés"
     },
     "timeShift": "+2 heures",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Red_Square_2023.jpg",
@@ -152,7 +152,7 @@
     "currency": "Yuan Chinois",
     "weather": {
       "description": "Ensoleillé",
-      "temperature": 22
+      "temperature": "22 degrés"
     },
     "timeShift": "+7 heures",
     "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/7/75/20090529_Great_Wall_8216.jpg",
