@@ -11,7 +11,7 @@ export default function CountryCard({
   isOpenCard: boolean;
   currentQuestion: GoodCountryQuestion;
 }) {
-  const countriesData = import.meta.env.VITE_API_URL;
+  const countriesData = import.meta.env.VITE_API_URL_COUNTRIES;
   const [countriesDetails, setCountriesDetails] =
     useState<CountryCardType | null>(null);
   const [isClosed, setIsClosed] = useState(false);
@@ -22,7 +22,7 @@ export default function CountryCard({
   };
 
   useEffect(() => {
-    fetch(`${countriesData}/api/countries`)
+    fetch(`${countriesData}`)
       .then((res) => res.json())
       .then((data) =>
         setCountriesDetails(

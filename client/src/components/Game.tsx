@@ -26,11 +26,12 @@ export default function Game() {
   }, []);
 
   const fetchQuestions = () => {
-    const baseUrl = import.meta.env.VITE_API_URL;
+    const goodCountries = import.meta.env.VITE_API_URL_COUNTRIES;
+    const badCountries = import.meta.env.VITE_API_URL_BAD_COUNTRIES;
 
     Promise.all([
-      fetch(`${baseUrl}/api/countries`).then((res) => res.json()),
-      fetch(`${baseUrl}/api/badcountries`).then((res) => res.json()),
+      fetch(`${goodCountries}`).then((res) => res.json()),
+      fetch(`${badCountries}`).then((res) => res.json()),
     ])
 
       .then(([countriesData, badCountriesData]) => {
