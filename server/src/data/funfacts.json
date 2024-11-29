@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "countryName": "France",
+    "funFact": "Le fromage français compte plus de 1 600 variétés différentes."
+  },
+  {
+    "id": 2,
+    "countryName": "Japon",
+    "funFact": "Les rues de Tokyo sont si propres qu'il est rare d'y trouver des poubelles."
+  },
+  {
+    "id": 3,
+    "countryName": "Etats-Unis",
+    "funFact": "Le Route 66, une route mythique, traverse les États-Unis d'Est en Ouest."
+  },
+  {
+    "id": 4,
+    "countryName": "Brésil",
+    "funFact": "Le carnaval de Rio est l'un des plus célèbres au monde."
+  },
+  {
+    "id": 5,
+    "countryName": "Australie",
+    "funFact": "Le kangourou ne peut pas reculer."
+  },
+  {
+    "id": 6,
+    "countryName": "Afrique du Sud",
+    "funFact": "Nelson Mandela a été le premier président noir d'Afrique du Sud."
+  },
+  {
+    "id": 7,
+    "countryName": "Inde",
+    "funFact": "Le Taj Mahal a été construit en mémoire d'une épouse décédée."
+  },
+  {
+    "id": 8,
+    "countryName": "Allemagne",
+    "funFact": "Le carnaval de Düsseldorf est l'un des plus grands au monde."
+  },
+  {
+    "id": 9,
+    "countryName": "Russie",
+    "funFact": "La Russie s'étend sur 11 fuseaux horaires différents."
+  },
+  {
+    "id": 10,
+    "countryName": "Chine",
+    "funFact": "La Grande Muraille de Chine est visible depuis l'espace."
+  }
+]

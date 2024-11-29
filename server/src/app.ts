@@ -1,12 +1,22 @@
 // Load the express module to create a web application
-
 import express from "express";
-
 const app = express();
+const countries = require("./data/countries.json");
+const badcountries = require("./data/badcountries.json");
+const funfacts = require("./data/funfacts.json");
+
+// app.get("/api/countries/:id", (req, res) => {
+//   const countryId = +req.params.id;
+//   const country = countries.find((c: c) => c.id === countryId);
+
+//   if (country) {
+//     res.json(country);
+//   } else {
+//     res.status(404).json({ error: "Country not found" });
+//   }
+// });
 
 // Configure it
-
-/* ************************************************************************* */
 
 // CORS Handling: Why is the current code present and do I need to define specific allowed origins for my project?
 
@@ -65,7 +75,18 @@ import router from "./router";
 // Mount the API router under the "/api" endpoint
 app.use(router);
 
-/* ************************************************************************* */
+app.get("/api/countries", (req, res) => {
+  res.json(countries);
+});
+
+app.get("/api/badcountries", (req, res) => {
+  res.json(badcountries);
+});
+
+app.get("/api/funfacts", (req, res) => {
+  res.json(funfacts);
+});
+// import countries from './data/countries.json';
 
 // Production-ready setup: What is it for?
 
