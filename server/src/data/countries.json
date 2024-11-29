@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "countryName": "France",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    "capital": "Paris",
+    "population": "67 081 000",
+    "currency": "Euro",
+    "weather": {
+      "description": "Partiellement nuageux",
+      "temperature": "18 degrés"
+    },
+    "timeShift": "0 heure",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg",
+    "timezone": "Europe/Paris",
+    "hint": "C'est le pays du camembert et des baguettes."
+  },
+  {
+    "id": 2,
+    "countryName": "Japon",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
+    "capital": "Tokyo",
+    "population": "125 800 000",
+    "currency": "Yen Japonais",
+    "weather": {
+      "description": "Ensoleillé",
+      "temperature": "24 degrés"
+    },
+    "timeShift": "+8 heures",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Mt._Fuji_from_Park_Hotel_Tokyo_%284457243468%29.jpg",
+    "timezone": "Asia/Tokyo",
+    "hint": "C'est le pays des samouraïs."
+  },
+  {
+    "id": 3,
+    "countryName": "Etats-Unis",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+    "capital": "Washington, D.C.",
+    "population": "331 893 745",
+    "currency": "Dollar Américain",
+    "weather": {
+      "description": "pluvieux",
+      "temperature": "15 degrés"
+    },
+    "timeShift": "-6 heures",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/a/af/WhiteHouseSouthFacade.JPG",
+    "timezone": "America/New_York",
+    "hint": "C'est le pays qui a envoyé les premiers hommes sur la lune."
+  },
+  {
+    "id": 4,
+    "countryName": "Brésil",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
+    "capital": "Brasilia",
+    "population": "213 993 437",
+    "currency": "Real Brésilien",
+    "weather": {
+      "description": "Ensoleillé",
+      "temperature": "28 degrés"
+    },
+    "timeShift": "-4 heures",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg",
+    "timezone": "America/Sao_Paulo",
+    "hint": "C'est le pays de la samba et du carnaval."
+  },
+  {
+    "id": 5,
+    "countryName": "Australie",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg",
+    "capital": "Canberra",
+    "population": "25 687 041",
+    "currency": "Dollar Australien",
+    "weather": {
+      "description": "Nuageux",
+      "temperature": "12 degrés"
+    },
+    "timeShift": "+ 10 heures",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Sydney_Opera_House_-_Dec_2008.jpg",
+    "timezone": "Australia/Sydney",
+    "hint": "C'est le pays des kangourous et des koalas."
+  },
+  {
+    "id": 6,
+    "countryName": "Afrique du Sud",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
+    "capital": "Pretoria",
+    "population": "59 308 690",
+    "currency": "Rand Sud-Américain",
+    "weather": {
+      "description": "Nuageux",
+      "temperature": "20 degrés"
+    },
+    "timeShift": "+1 heure",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/9/92/Mandela_statue_at_Drakenstein_Correctional_Facility_%2813263918723%29.jpg",
+    "timezone": "Africa/Johannesburg",
+    "hint": "C'est le pays de Nelson Mandela."
+  },
+  {
+    "id": 7,
+    "countryName": "Inde",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+    "capital": "New Delhi",
+    "population": "1 380 004 385",
+    "currency": "Roupie Indienne",
+    "weather": {
+      "description": "Brumeux",
+      "temperature": "29 degrés"
+    },
+    "timeShift": "+4 heures 30 minutes",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/7/74/Taj_Mahal%2C_Agra%2C_India_edit2.jpg",
+    "timezone": "Asia/Kolkata",
+    "hint": "Christophe Colomb pensait aller là-bas."
+  },
+  {
+    "id": 8,
+    "countryName": "Allemagne",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
+    "capital": "Berlin",
+    "population": "83 240 525",
+    "currency": "Euro",
+    "weather": {
+      "description": "Pluvieux",
+      "temperature": "16 degrés"
+    },
+    "timeShift": "0 heure",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Brandenburger_Tor_nachts.jpg",
+    "timezone": "Europe/Berlin",
+    "hint": "Le compositeur Beethoven en est originaire."
+  },
+  {
+    "id": 9,
+    "countryName": "Russie",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
+    "capital": "Moscou",
+    "population": "144 104 080",
+    "currency": "Rouble Russe",
+    "weather": {
+      "description": "Neigeux",
+      "temperature": "-5 degrés"
+    },
+    "timeShift": "+2 heures",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Red_Square_2023.jpg",
+    "timezone": "Europe/Moscou",
+    "hint": "C'est le plus grand pays du monde."
+  },
+  {
+    "id": 10,
+    "countryName": "Chine",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+    "capital": "Beijing",
+    "population": "1 402 112 000",
+    "currency": "Yuan Chinois",
+    "weather": {
+      "description": "Ensoleillé",
+      "temperature": "22 degrés"
+    },
+    "timeShift": "+7 heures",
+    "monumentImage": "https://upload.wikimedia.org/wikipedia/commons/7/75/20090529_Great_Wall_8216.jpg",
+    "timezone": "Asia/Shanghai",
+    "hint": "C'est le pays des pandas."
+  }
+]
